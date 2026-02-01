@@ -279,6 +279,21 @@ function Dashboard() {
                     </div>
                 </div>
 
+                {/* Inventory Shortcut */}
+                <div
+                    onClick={() => navigate('/inventory')}
+                    className="bg-white p-4 rounded-2xl shadow-sm border border-slate-100 flex items-center justify-between cursor-pointer hover:bg-slate-50 transition active:scale-[0.98]"
+                >
+                    <div className="flex items-center gap-3">
+                        <span className="text-2xl">📦</span>
+                        <div>
+                            <h3 className="font-bold text-slate-800">Inventory Stock</h3>
+                            <p className="text-xs text-slate-500">Manage raw materials & stock</p>
+                        </div>
+                    </div>
+                    <span className="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-xs font-bold">Manage</span>
+                </div>
+
                 {/* 2. Charts Section */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {/* Trend Chart */}

@@ -9,6 +9,7 @@ import Register from './pages/Register'
 import Settings from './pages/Settings'
 import BudgetSettings from './pages/BudgetSettings'
 import Reports from './pages/Reports'
+import Inventory from './pages/Inventory'
 import { LanguageProvider } from './contexts/LanguageContext'
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
@@ -79,6 +80,12 @@ function App() {
           <Route path="/reports" element={
             <ProtectedRoute>
               <Reports />
+            </ProtectedRoute>
+          } />
+
+          <Route path="/inventory" element={
+            <ProtectedRoute>
+              <Inventory />
             </ProtectedRoute>
           } />
 
